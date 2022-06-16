@@ -40,7 +40,7 @@ class CommentController extends Controller
 
             $comment->text = $validated['text'];
             $comment->post_id = $id;
-            $comment->user_id = auth('api')->user();
+            $comment->user_id = auth('api')->user()->id;
 
             $comment->save();
     

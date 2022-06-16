@@ -11,4 +11,11 @@ URL example: http://localhost:8080/api/users
 - ForceJsonResponse middleware for JSON responses
 - JSON response for 404 NotFoundHttpException
 
+**Steps**
 
+1. Clone repo
+2. docker-compose up --build
+3. php artisan migrate
+4. php artisan passport:install --uuids
+5. php artisan db:seed
+6. php artisan user:create <params...>
